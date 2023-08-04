@@ -6,20 +6,12 @@ let doi;
 if (url.searchParams.get('in') != null) {
   doi = url.searchParams.get('in');
 } else {
-<<<<<<< HEAD
   doi = "Nisa";
-=======
-  doi = "Filzah";
->>>>>>> b0f797c4da2f28374661a474a27b636de3042f54
 }
 
 let footer = document.getElementById("credit");
 footer.innerHTML = doi;
-<<<<<<< HEAD
 footer.href = "https://www.instagram.com/ilyasin._/";
-=======
-footer.href = "https://www.instagram.com/_ilyasin_/";
->>>>>>> b0f797c4da2f28374661a474a27b636de3042f54
 
 function time() {
   var d = new Date();
@@ -67,11 +59,7 @@ function selesai() {
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire({
-<<<<<<< HEAD
     title: 'Hai Bocil!',
-=======
-    title: 'Hai fiil!',
->>>>>>> b0f797c4da2f28374661a474a27b636de3042f54
     html: `Selamat ${time()}, Kamu udah ${makan()}?`,
     timer: 2500,
     timerProgressBar: true,
@@ -89,11 +77,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           if (result.dismiss === Swal.DismissReason.timer) {
             Swal.fire({
               title: ' ',
-<<<<<<< HEAD
-              html: `Lagi pusing banget, cape banget`,
-=======
-              html: `Lagi cape, lagi banyak pikiran`,
->>>>>>> b0f797c4da2f28374661a474a27b636de3042f54
+              html: `Lagi pusing, cape`,
               timer: 2000,
               timerProgressBar: true,
               showConfirmButton: false,
@@ -101,11 +85,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
               if (result.dismiss === Swal.DismissReason.timer) {
                 Swal.fire('Semangat terus ya kamu :)').then((result) => {
                   Swal.fire(
-<<<<<<< HEAD
                     'Jangan keseringan begadang!',
-=======
-                    'Tenang aja, gausah terlalu dipikirin!',
->>>>>>> b0f797c4da2f28374661a474a27b636de3042f54
                     '',
                     'error'
                   ).then((result) => {
@@ -114,26 +94,17 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       '',
                       'error'
                     ).then((result) => {
-<<<<<<< HEAD
                       Swal.fire('Aku dukung kamu teruuus').then((result) => {
-=======
-                      Swal.fire('Aku dukung kamu terus ko').then((result) => {
->>>>>>> b0f797c4da2f28374661a474a27b636de3042f54
                         Swal.fire({
                           title: 'Oh iya aku mau nanya',
                           text: 'Ada sesuatu yang lagi kamu pingin ga?',
                           showDenyButton: true,
-<<<<<<< HEAD
                           confirmButtonText: `Ada om`,
-=======
-                          confirmButtonText: `Ada`,
->>>>>>> b0f797c4da2f28374661a474a27b636de3042f54
                           denyButtonText: `Ga ada ko`,
                         }).then((result) => {
                           /* Read more about isConfirmed, isDenied below */
                           if (result.isConfirmed) {
                             Swal.fire({
-<<<<<<< HEAD
                               title: 'Mau apa? Tulis aja link CO nya',
                               input: 'text',
                               inputPlaceholder: 'link shopee atau tokopedia boleeh',
@@ -145,19 +116,6 @@ document.querySelector(".tombol").addEventListener('click', function () {
                               }
                             }).then((result) => {
                               Swal.fire('Okey cil', 'Nanti aku CO-in yaaa', 'success').then((result) => {
-=======
-                              title: 'Mau apa?',
-                              input: 'text',
-                              inputPlaceholder: 'ex: Seblak, boba, or etc',
-                              showCancelButton: false,
-                              inputValidator: (value) => {
-                                if (!value) {
-                                  return 'Isi dulu dong beb'
-                                }
-                              }
-                            }).then((result) => {
-                              Swal.fire('Okaaay fil', 'Hari sabtu aku bawain yaa', 'success').then((result) => {
->>>>>>> b0f797c4da2f28374661a474a27b636de3042f54
                                 Swal.fire("See ya! Aku kangen ^^").then((result) => {
                                   selesai()
                                 });
